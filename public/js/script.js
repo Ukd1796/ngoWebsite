@@ -82,3 +82,10 @@ function changeSelect(i){
   function hideSM(){
     $("#sm-menu").hide();
   }
+
+  $(document).ready(function() {
+    setTimeout(popup, 3000);
+    function popup() {
+    $("#popUp").css("display", "block");
+}
+});

@@ -420,3 +420,13 @@ width: 200px; border-bottom-right-radius: 6px; border-bottom-left-radius: 6px; f
     height:5rem;
 
 }
+
+.filter{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 1rem;
+}
+
+.schoolName{
+    width:50%;
+    margin-left:25%;
+}

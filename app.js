@@ -12,6 +12,10 @@ app.get("/",function(req,res){
     res.render("home");
 })
 
+app.get("/ngo",function(req,res){
+    res.render("ngo");
+})
+
 app.listen(3000,function(){
     console.log("server is running on port 3000!!");
 });

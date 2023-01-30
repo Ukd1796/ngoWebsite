@@ -74,8 +74,8 @@
                                  </div>
                                   <div style="height: 94px; overflow: hidden"  class="col-md-8 hidden-sm">
                                         
-<!--                                       
-                                       <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat loginBtn">Login</button>
+                                      
+                                       <!-- <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat loginBtn">Login</button>
                                        <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat signUpBtn">Sign Up</button> -->
                                        
                                       
@@ -257,7 +257,7 @@
                 <div class="col-sm-4">
                     <div class="widget-box-inner">
 <div class="round"><a class="inner" href="#"><i class="fa fa-users"></i></a></div>
-<h2>Join Volunteer</h2>
+<h2>School</h2>
 <p>Since 13-3-2015, Thankam Foundation has placed 19,869 volunteers in 22 programs around the world alongside empowering grassroots community projects. </p>
 </div>
                     
@@ -282,12 +282,39 @@
                   
                   
                   <div class="widget-box-inner">
-<div class="round"><a class="inner" href="#"><i class="fa fa-user"></i></a></div>
-<h2>Biography</h2>
+<div class="round"><a class="inner" href="#"  data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user"></i></a></div>
+<h2>NGO</h2>
 <p>This Deed of declaration of trust made on 13th day of March 2015 by Mr.Kingsly. With the sole aim of social charitable, religious Promotional, educational and cultural activities.  </p>
 </div>
-                  
-                  
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top:15%;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Login</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-4%">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label" style="margin-left:-85%">Username:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label" style="margin-left:-85%">Password:</label>
+            <input type="password" class="form-control" id="recipient-name">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <h3 style="margin-right:75%">New User?</h3>
+        <button style="position:relative; bottom:40px; right:220px;" type="button" class="btn btn-secondary" data-dismiss="modal">Sign Up</button>
+        <button style="position: relative; bottom:40px;" type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>          
                   
                   
                   
@@ -401,10 +428,6 @@
 </div>
 <strong class="title">Industries Inaguration</strong><strong class="mnt"><span>29 Augest, 2015</span></strong></div>
 </div>
-                        
-                        
-                        
-                       
                     </div>
                    
                    </div>
@@ -536,8 +559,7 @@
   <!---************************** Body content Ends Here ***************-->  
 
 
-      <footer style="margin-top:25px;">
-    
+      <footer>
     <div class="container foot-cont">
         <div class="col-sm-4">
             <b>About Us</b>
@@ -589,14 +611,17 @@ aim of involving in social charitable, religious, promotional, educational and c
         </div> -->
     </footer>
       </div>   
-   <div style="z-index: 999999; margin-top: 10%;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div style="z-index: 999999; margin-top: 15%;" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div style="width:450px;" class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Donate Now</h4>
+        <h4 class="modal-title" id="myModalLabel">Are You</h4>
       </div>
       <div style="padding: 20px;" class="modal-body">
+
+        <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat">NGO</button>
+        <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat">School</button>
         
         <b>Indian Bank, Thiruvattar.</b><br>
         <b>IFSC Code:IDIB000T155.</b><br>
@@ -608,6 +633,7 @@ aim of involving in social charitable, religious, promotional, educational and c
   </div>
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-ui-router.min.js"></script>      
 <script src="js/jquery-1.11.3.min.js"></script>

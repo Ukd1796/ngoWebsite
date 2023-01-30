@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thankam Foundation</title>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+      <link href="css/lightbox.css" rel="stylesheet"/>
+    <link href="css/ngoStyle.css" rel="stylesheet"/>
+</head>
+<body ng-app="thankam">
+    <div style="z-index:99999" class="container-fluid">
+        <div id="sm-menu" class="menu-sd">
+          <div class="row menu-top-smd">
+            <i onclick="hideSM()" class="fa fa-times"></i>
+          </div>
+
+              <ul  style="margin-top: 30px;" class="menu-itmen-sm">
+                        <li onclick="hideSM()"  id="mm1" onlick="changeSelect(1)" class="active  mom"> <a href="index.html" >
+                          <i class="fa fa-home"></i>
+                           Home</a></li>
+
+                         <li onclick="hideSM()" class="mom" id="mm2" onclick="changeSelect(2)" > <a href="aboutus.html">
+                         <i class="fa fa-shield"></i>
+                           About Us</a></li>   
+                      
+                       <li  onclick="hideSM()" class="mom" id="mm3" onclick="changeSelect(3)"  > <a href="supportus.html">
+                           <i class="fa fa-credit-card"></i>
+                           Support Us</a></li>
+                       <li onclick="hideSM()" class="mom" id="mm4" onclick="changeSelect(4)"  > <a href="gallery.html">
+                          <i class="fa fa-photo"></i>
+                           Gallery</a></li>
+                       <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="testimonial.html">
+                           <i class="fa fa-user"></i>
+                           Testimonials</a></li>
+                       <li onclick="hideSM()" class="mom" id="mm6" onclick="changeSelect(6)" > <a href="news.html">
+                           <i class="fa fa-newspaper-o"></i>
+                           News</a></li>
+                      <li onclick="hideSM()" class="mom" id="mm7"  onclick="changeSelect(7)"  > <a href="contactus.html">
+                          <i class=" fa fa-map-marker"></i>
+                          Contact Us</a></li>
+                       
+                  </ul>
+
+              
+        </div>
+
+  <div class="mobile-head shado-1 visible-xs">
+          <img style="width:50px;" class="logo" src="images/logo.jpg">
+              <h1 style="width:70%">Thankam Foundation</h1>
+              <b style="margin-left: 4px;">social awareness foundation</b>
+
+              <i onclick="showSM()" class="fa fa-navicon smal-menu-ico cp"></i>
+  </div>
+
+  <header class="hidden-xs">
+      
+      <nav style="position: absolute;" class="navmenu">
+          <div style="margin:auto" >
+              <div class="nav-content shado-1">
+
+                <div class="container">
+                  <div style="height: 94px; overflow: hidden" class="col-md-4 col-sm-12">
+                       <img style="width:90px;" class="logo" src="images/logo.jpg">
+                      <h1 style="width:70%">Thankam Foundation</h1>
+                       <b style="margin-left: 4px;">social awareness foundation</b>
+                   </div>
+                    <div style="height: 94px; overflow: hidden"  class="col-md-8 hidden-sm">
+                          
+                        
+                         <!-- <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat loginBtn">Login</button>
+                         <button data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-donat signUpBtn">Sign Up</button> -->
+                         
+                        
+                          <!-- <ul class="top-right">
+                                  <li ><i class="fa fa-linkedin-square"></i></li>
+
+                                   <li><i class="fa fa-google-plus-square"></i></li>
+                                   <li><i class="fa fa-tumblr-square"></i></li>
+                                   <li><i class="fa fa-instagram"></i></li>
+                                   <li class="bll-o"><i class="fa fa-facebook-square"></i></li> -->
+
+
+                              </ul> 
+
+                              <!-- <div class="exu">
+                                 <i class="fa fa-phone"></i> :  +91 9442719300
+                                  <i style="margin-left: 30px;" class="fa fa-envelope"></i> :  info@thankamfoundation.org
+                              </div> -->
+                    </div>
+               
+                   
+                  
+                  </div>
+
+
+
+                  <div>
+                        
+
+                  </div>
+              </div>
+              <div class="my-nav shado-1">
+                  <div class="container">
+                      <ul  class="nav-menu1">
+                        <li onclick="hideSM()"  id="mm1" onlick="changeSelect(1)" class="active  mom"> <a href="index.html" >
+                          <i class="fa fa-home"></i>
+                           Home</a></li>
+
+                         <li onclick="hideSM()" class="mom" id="mm2" onclick="changeSelect(2)" > <a href="aboutus.html">
+                         <i class="fa fa-shield"></i>
+                           About Us</a></li>   
+                      
+                       <li  onclick="hideSM()" class="mom" id="mm3" onclick="changeSelect(3)"  > <a href="supportus.html">
+                           <i class="fa fa-credit-card"></i>
+                           Support Us</a></li>
+                       <li onclick="hideSM()" class="mom" id="mm4" onclick="changeSelect(4)"  > <a href="gallery.html">
+                          <i class="fa fa-photo"></i>
+                           Gallery</a></li>
+                       <li onclick="hideSM()" class="mom" id="mm5" onclick="changeSelect(5)" > <a href="testimonial.html">
+                           <i class="fa fa-user"></i>
+                           Testimonials</a></li>
+                       <li onclick="hideSM()" class="mom" id="mm6" onclick="changeSelect(6)" > <a href="news.html">
+                           <i class="fa fa-newspaper-o"></i>
+                           News</a></li>
+                      <li onclick="hideSM()" class="mom" id="mm7"  onclick="changeSelect(7)"  > <a href="contactus.html">
+                          <i class=" fa fa-map-marker"></i>
+                          Contact Us</a></li>
+                       
+                  </ul>
+                  </div>
+                
+              </div>
+              
+              
+          </div>
+      </nav>
+      <div class="header-top shado-6">
+          <div style="z-index: 999999;" class="container">
+          
+          <ul class="top-left">
+              <li class="rit-border"> Donate </li>
+              <li class="rit-border"> Join Volunteer </li>
+              <li> 9159449499 </li>
+          </ul>
+              
+          
+              <ul class="top-right">
+                  <li><i class="fa fa"></i></li>
+                  
+                   
+                  
+              </ul>
+          </div>
+          
+      </div>
+      
+    </header>           
+</div>
+<!---************************** Header content Ends Here ***************-->  
+
+<!-- middle area -->
+<div class="middle-content">
+<div class="filter" style="background-color: red; margin-left:2%;margin-top:10%; width:20%;height:500px; ">
+    <h3>Filter</h3>
+
+
+</div>
+<div class="schoolName">
+    <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+
+</div>
+
+
+<!-- footer -->
+<footer>
+    <div class="container foot-cont" style="margin-top:15%;">
+        <div class="col-sm-4">
+            <b>About Us</b>
+            <p>
+            Thankam Social Awareness Foundation Trust is for the purpose of carrying out the objects 
+
+hereinafter set out without any distinction of caste, color or creed. It has no profit motive.  With the sole 
+
+aim of involving in social charitable, religious, promotional, educational and cultural.
+            </p>
+        </div>
+         <div class="col-sm-3">
+            <b>Address</b>
+             
+             <p style="font-size:15px;">Thankam Foundation<br>
+             
+              1st Floor, Opp Padma Hospital <br>
+                 
+                  Near Bus Stand, Thiruvattar, <br>
+                 
+                  K.K District, Tamilnadu <br>
+                 
+                email:info@thankamfoundation.org
+         <br>
+             </p>
+        </div> 
+        <div class="col-sm-5 scmsug">
+            <b style="text-align:center; width:100%; margin-left:30%;">Working Hours</b>
+            <ul class="wh">
+                <li>Monday   <b> 9.30 AM to 6.00PM</b></li>
+                <li>Tuesday  <b> 9.30 AM to 6.00PM</b></li>
+                 <li>Wednesday  <b> 9.30 AM to 6.00PM</b></li>
+                 <li>Thursday  <b> 9.30 AM to 6.00PM</b></li>
+                 <li>Friday  <b> 9.30 AM to 6.00PM</b></li>
+                 <li>Saturday  <b> 9.30 AM to 6.00PM</b></li>
+            </ul>
+        </div>
+    </div>
+     <!-- <div class=" smarti">
+            <div class="container">
+            <p>All Rights Reserved &copy; Thankam Foundation | Designed &amp; Developed By Smarteye
+                
+                <i class="fa fa-twitter fico-s hidden-xs"></i>
+                 <i class="fa fa-pinterest-p fico-s hidden-xs"></i>
+                 <i class="fa fa-google-plus fico-s hidden-xs"></i>
+                 <i class="fa fa-facebook fico-s hidden-xs"></i>  
+              </p>      
+         </div>
+        </div> -->
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>      
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
