@@ -16,6 +16,11 @@ app.get("/ngo",function(req,res){
     res.render("ngo");
 })
 
+app.get("/school",function(req,res){
+    res.render("school");
+})
+
+
 app.listen(3000,function(){
     console.log("server is running on port 3000!!");
 });
